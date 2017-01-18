@@ -6,6 +6,20 @@
     "url": "https://github.com/maxharris9/wired.git",
     "type": "git"
   },
-  "contributors": ["llanginger <llanginger@gmail.com>", "maxharris9 <harris.max@gmail.com>"],
-  "license": "MIT"
+  "contributors": [
+    "llanginger <llanginger@gmail.com>",
+    "maxharris9 <harris.max@gmail.com>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "watch-js": "watchify -v -e src/client/index.js -t [ babelify --presets [ es2015 react ] ] --debug -o build/bundle.js",
+    "build-js": "NODE_ENV=production browserify -v -e src/client/index.js -t [ babelify --presets [ es2015 react ] ] -o build/tmp.js",
+    "build-js-dev": "browserify -v -e src/client/index.js -t [ babelify --presets [ es2015 react ] ] -o build/bundle.js",
+    "uglifyjs": "uglifyjs --compress --mangle --stats --screw-ie8 --output build/bundle.js -- build/tmp.js"
+  },
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "uglify": "^0.1.5",
+    "watchify": "^3.8.0"
+  }
 }
