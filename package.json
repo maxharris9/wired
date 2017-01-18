@@ -1,0 +1,11 @@
+{
+  "name": "wired",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/maxharris9/wired.git",
+    "type": "git"
+  },
+  "contributors": ["llanginger <llanginger@gmail.com>", "maxharris9 <harris.max@gmail.com>"],
+  "license": "MIT"
+}
