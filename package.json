@@ -21,5 +21,13 @@
     "browserify": "^13.3.0",
     "uglify": "^0.1.5",
     "watchify": "^3.8.0"
+  },
+  "dependencies": {
+    "d3": "^4.4.1",
+    "immutable": "^3.8.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.2"
   }
 }
